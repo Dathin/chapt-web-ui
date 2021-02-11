@@ -1,0 +1,15 @@
+@mixin border--lightblue {
+  background-color: $color-3;
+  border: .15rem $color-4 solid;
+  border-radius: 0;
+}
+
+@mixin border__hover {
+  border-radius: 10px;
+}
+
+@mixin border__hover--lightblue {
+  @include border__hover;
+  border: .15rem $color-3 solid;
+  background-color: $color-4;
+}
