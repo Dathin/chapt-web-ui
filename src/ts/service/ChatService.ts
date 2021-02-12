@@ -28,7 +28,6 @@ export class ChatService {
 		} catch (e) {
 			await this.alertService.error(UNEXPECTED_ERROR);
 			location.pathname = '';
-
 		}
 	};
 
@@ -110,7 +109,7 @@ export class ChatService {
 	//TODO: create intellij arrow function shortcut and stuff
 	//sendMessage
 	private sendMessage = async (message: string): Promise<void> => {
-		this.chaptService.sendMessage(message, this.to);
+		// this.chaptService.sendMessage(message, this.to);
 	};
 
 	//receiveMessage

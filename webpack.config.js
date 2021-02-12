@@ -9,7 +9,7 @@ let config = {
 
 	entry: {
 		login: ['./src/ts/controller/UserLoginController.ts', './src/scss/pages/login.scss'],
-		chat: ['./src/ts/controller/ChatController.ts', './src/scss/pages/chat.scss'],
+		chat: ['./src/ts/page/ChatPage.ts', './src/scss/pages/chat.scss'],
 	},
 
 	output: {
@@ -21,7 +21,7 @@ let config = {
 	},
 	devServer: {
 		contentBase: buildPath,
-		open: true,
+		open: false,
 		liveReload: true,
 		port: 9000,
 		disableHostCheck: true,

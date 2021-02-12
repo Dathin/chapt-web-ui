@@ -12,11 +12,11 @@ export class ChatController extends PrivateController {
   constructor(chatService?: ChatService) {
 		super();
 		//TODO: Lazy loading
-		this.contacts = <HTMLDivElement>document.querySelector('#contacts');
-		this.chat = <HTMLDivElement>document.querySelector('#chat');
+		this.contacts = <HTMLDivElement>document.getElementById('contacts');
+		this.chat = <HTMLDivElement>document.getElementById('chat');
 		this.chatService = chatService || new ChatService(this.contacts, this.chat,
 			new AlertService(),
-			new ChaptService(this.chat));
+			new ChaptService());
 	}
 
   populateContacts = async (): Promise<void> => {
