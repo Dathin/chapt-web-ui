@@ -1,6 +1,0 @@
-node_modules
-.idea
-*.iml
-public
-/yarn-error.log
-coverage
